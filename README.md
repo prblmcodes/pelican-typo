@@ -15,10 +15,10 @@ A typography-focused theme for [Pelican](https://getpelican.com/) with automatic
 
 ## Installation
 
-### From pelican-themes repository
+### Clone repository in your project using
 
 ```bash
-git clone --recursive https://github.com/getpelican/pelican-themes.git
+git clone https://github.com/prblmcodes/pelican-typo.git
 ```
 
 Then set in your `pelicanconf.py`:
@@ -27,14 +27,7 @@ Then set in your `pelicanconf.py`:
 THEME = '/path/to/pelican-themes/pelican-typo'
 ```
 
-### Direct installation
-
-```bash
-git clone https://github.com/getpelican/pelican-themes.git
-cd pelican-themes/pelican-typo
-```
-
-Or copy the `pelican-typo` folder directly into your project's themes directory.
+Or downlod the `pelican-typo` as zip file and copy the `pelican-typo` folder directly into your project's themes directory.
 
 ## Configuration
 
@@ -43,6 +36,9 @@ Add to your `pelicanconf.py`:
 ```python
 # Required
 THEME = 'path/to/pelican-typo'
+
+# Required
+PATH = "content"
 
 # Theme color scheme (optional, defaults to 'default')
 THEME_COLOR = 'default'  # See color schemes below
@@ -68,18 +64,6 @@ DISPLAY_CATEGORIES_ON_MENU = True
 MENUITEMS = (
     ('Archives', '/archives.html'),
     ('Tags', '/tags.html'),
-)
-
-# Social links (optional)
-SOCIAL = (
-    ('GitHub', 'https://github.com/username'),
-    ('Twitter', 'https://twitter.com/username'),
-)
-
-# Blogroll links (optional)
-LINKS = (
-    ('Pelican', 'https://getpelican.com/'),
-    ('Python', 'https://python.org/'),
 )
 ```
 
